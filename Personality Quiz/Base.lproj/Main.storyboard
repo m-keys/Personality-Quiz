@@ -116,14 +116,23 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lJi-Gs-BbV">
                                         <rect key="frame" x="0.0" y="38" width="288" height="30"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="singleAnswerButtonPressed:" destination="oIB-cm-juR" eventType="touchUpInside" id="nXG-Sk-4zf"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mgM-Jz-eIx">
                                         <rect key="frame" x="0.0" y="76" width="288" height="30"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="singleAnswerButtonPressed:" destination="oIB-cm-juR" eventType="touchUpInside" id="FOf-mf-xgr"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dea-EU-3D4">
                                         <rect key="frame" x="0.0" y="114" width="288" height="30"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="singleAnswerButtonPressed:" destination="oIB-cm-juR" eventType="touchUpInside" id="ed8-bs-ljv"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -222,7 +231,6 @@
                                         <rect key="frame" x="0.0" y="90.5" width="288" height="30"/>
                                         <state key="normal" title="Ответить"/>
                                         <connections>
-                                            <action selector="multipleAnswerButtonPressed:" destination="oIB-cm-juR" eventType="touchUpInside" id="q9V-ne-Xek"/>
                                             <action selector="rangedAnswerButtonPressed" destination="oIB-cm-juR" eventType="touchUpInside" id="t78-fG-4PD"/>
                                         </connections>
                                     </button>
