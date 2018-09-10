@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -217,12 +218,17 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="eab-YG-3E4">
+                                <rect key="frame" x="32" y="462" width="256" height="2"/>
+                            </progressView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="bsH-iW-ImG" firstAttribute="leading" secondItem="PcE-VK-PGc" secondAttribute="leading" constant="16" id="2t4-fG-UBI"/>
                             <constraint firstItem="PcE-VK-PGc" firstAttribute="trailing" secondItem="qy4-EI-Kga" secondAttribute="trailing" constant="16" id="3Rz-Kd-e4w"/>
+                            <constraint firstItem="eab-YG-3E4" firstAttribute="leading" secondItem="PwL-wL-QZC" secondAttribute="leadingMargin" constant="16" id="6nS-pA-rD3"/>
                             <constraint firstItem="qy4-EI-Kga" firstAttribute="centerY" secondItem="PwL-wL-QZC" secondAttribute="centerY" id="Br4-qN-upU"/>
+                            <constraint firstItem="PcE-VK-PGc" firstAttribute="bottom" secondItem="eab-YG-3E4" secondAttribute="bottom" constant="16" id="Bzb-2D-GKP"/>
                             <constraint firstItem="qy4-EI-Kga" firstAttribute="leading" secondItem="PcE-VK-PGc" secondAttribute="leading" constant="16" id="FpS-kB-XK7"/>
                             <constraint firstItem="PcE-VK-PGc" firstAttribute="trailing" secondItem="7Eu-Eg-F2i" secondAttribute="trailing" constant="16" id="Hol-zE-rtB"/>
                             <constraint firstItem="PcE-VK-PGc" firstAttribute="trailing" secondItem="bsH-iW-ImG" secondAttribute="trailing" constant="16" id="Kjn-qD-KEp"/>
@@ -233,13 +239,26 @@
                             <constraint firstItem="yeL-Pk-tIU" firstAttribute="top" secondItem="PcE-VK-PGc" secondAttribute="top" constant="16" id="g8Z-Jh-agS"/>
                             <constraint firstItem="7Eu-Eg-F2i" firstAttribute="top" secondItem="yeL-Pk-tIU" secondAttribute="bottom" constant="16" id="pdb-vH-9tH"/>
                             <constraint firstItem="bsH-iW-ImG" firstAttribute="centerY" secondItem="PwL-wL-QZC" secondAttribute="centerY" id="wXQ-Id-OrZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="eab-YG-3E4" secondAttribute="trailing" constant="16" id="yzT-t7-Tqm"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PcE-VK-PGc"/>
                     </view>
                     <navigationItem key="navigationItem" id="yBJ-qn-qsU"/>
                     <connections>
+                        <outlet property="multiLabel1" destination="r1J-Mg-7Sf" id="qdt-mf-wep"/>
+                        <outlet property="multiLabel2" destination="lqE-YN-hNu" id="AxS-8m-NiI"/>
+                        <outlet property="multiLabel3" destination="Ue7-DG-V7k" id="Tb0-R0-bYb"/>
+                        <outlet property="multiLabel4" destination="Uqt-Qm-oV5" id="dea-bf-aGl"/>
                         <outlet property="multipleStackView" destination="7Eu-Eg-F2i" id="BxD-Ja-tH8"/>
+                        <outlet property="questionLabel" destination="yeL-Pk-tIU" id="lXg-Ha-PW3"/>
+                        <outlet property="questionProgressView" destination="eab-YG-3E4" id="Fj8-75-HAe"/>
+                        <outlet property="rangedLabel1" destination="jN4-h3-Jfs" id="Hg3-CX-jW6"/>
+                        <outlet property="rangedLabel2" destination="ysP-EC-mUQ" id="iDj-HW-7Qg"/>
                         <outlet property="rangedStackView" destination="bsH-iW-ImG" id="i1R-dB-k2G"/>
+                        <outlet property="singleButton1" destination="e0j-CX-Sue" id="TJI-ps-09x"/>
+                        <outlet property="singleButton2" destination="lJi-Gs-BbV" id="UCy-gE-yUL"/>
+                        <outlet property="singleButton3" destination="mgM-Jz-eIx" id="MKF-ga-2Xr"/>
+                        <outlet property="singleButton4" destination="Dea-EU-3D4" id="g8x-V4-SHz"/>
                         <outlet property="singleStackView" destination="qy4-EI-Kga" id="X81-DH-OTJ"/>
                         <segue destination="hBY-mM-rE2" kind="show" identifier="ResultsSegue" id="6bA-Cb-15e"/>
                     </connections>
