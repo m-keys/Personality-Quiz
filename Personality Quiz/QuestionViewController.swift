@@ -180,7 +180,16 @@ class QuestionViewController: UIViewController {
             //print(#function, questionIndex, questions.count)
             performSegue(withIdentifier: "ResultsSegue", sender: nil)
         }
-        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ResultsSegue" {
+            let resultsVC = segue.destination as! ResultsViewController
+            resultsVC.responses = answersChosen
+            questionIndex = 0
+            answersChosen = []
+            updateUI()
+        }
     }
     
 }
