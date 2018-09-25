@@ -1,20 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina3_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="Georgia.ttf">
-            <string>Georgia</string>
-        </array>
-    </customFonts>
     <scenes>
         <!--Introduction View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -99,6 +94,9 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yeL-Pk-tIU">
                                 <rect key="frame" x="16" y="80" width="288" height="38.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="38" id="K02-Zb-ONN"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -197,7 +195,7 @@
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j0C-1K-h2v">
                                         <rect key="frame" x="0.0" y="204" width="288" height="31"/>
-                                        <state key="normal" title="Button"/>
+                                        <state key="normal" title="Ответить"/>
                                         <connections>
                                             <action selector="multipleAnswerButtonPressed" destination="oIB-cm-juR" eventType="touchUpInside" id="mKa-fQ-Urw"/>
                                         </connections>
@@ -250,6 +248,7 @@
                             <constraint firstItem="qy4-EI-Kga" firstAttribute="leading" secondItem="PcE-VK-PGc" secondAttribute="leading" constant="16" id="FpS-kB-XK7"/>
                             <constraint firstItem="PcE-VK-PGc" firstAttribute="trailing" secondItem="7Eu-Eg-F2i" secondAttribute="trailing" constant="16" id="Hol-zE-rtB"/>
                             <constraint firstItem="PcE-VK-PGc" firstAttribute="trailing" secondItem="bsH-iW-ImG" secondAttribute="trailing" constant="16" id="Kjn-qD-KEp"/>
+                            <constraint firstItem="7Eu-Eg-F2i" firstAttribute="top" secondItem="yeL-Pk-tIU" secondAttribute="bottom" constant="4" id="NOj-nP-Xyp"/>
                             <constraint firstItem="PcE-VK-PGc" firstAttribute="trailing" secondItem="yeL-Pk-tIU" secondAttribute="trailing" constant="16" id="Pzu-lZ-PV1"/>
                             <constraint firstItem="yeL-Pk-tIU" firstAttribute="leading" secondItem="PcE-VK-PGc" secondAttribute="leading" constant="16" id="VTT-dw-svj"/>
                             <constraint firstItem="7Eu-Eg-F2i" firstAttribute="centerY" secondItem="PwL-wL-QZC" secondAttribute="centerY" id="Xjo-mL-QwX"/>
@@ -307,7 +306,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="98p-vv-m2E">
-                                        <rect key="frame" x="-16" y="72" width="0.0" height="20.5"/>
+                                        <rect key="frame" x="123" y="72" width="42" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
